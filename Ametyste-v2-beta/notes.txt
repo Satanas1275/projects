@@ -1,0 +1,16 @@
+Balises sémantiques (de structuration) : 
+- header --> En-tete (logo, menu)
+- main --> Contenu principal 
+- footer --> pied de page
+
+NB : Optionnelles mais importantes pour le référencement du site et sa structure
+
+------ 
+
+MENU 
+
+Important : balise <nav>
+Ordrte : nav > ul > li > a
+
+Lien : balise <a> 
+NB : Ne pas oublier l'attribut href sur la balise 

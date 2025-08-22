@@ -1,0 +1,23 @@
+[
+    { 
+        "titre": "C'est nul", 
+        "artiste": "Homer Simpson", 
+        "fichier": "1.mp3",
+        "duree": "0:01",
+        "image": "png/1.png"
+    },
+    { 
+        "titre": "Song Two", 
+        "artiste": "Artist Two", 
+        "fichier": "SongTwo.mp3", 
+        "duree": "2:29", 
+        "image": "png/2.png"
+    },
+    { 
+        "titre": "Song Three", 
+        "artiste": "Artist Three", 
+        "fichier": "SongThree.mp3", 
+        "duree": "3:12", 
+        "image": "png/3.png"
+    }
+]

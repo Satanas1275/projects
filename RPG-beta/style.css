@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background:#161616;
+    color:#fcfcfc;
+    display:flex;
+    align-items:center;
+}
+
+section.jeu{
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align:center;
+    font-size:6em;
+    text-transform: uppercase;
+    margin-bottom:50px;
+    font-family: "Micro 5", sans-serif;
+}
+
+article.illustrations{
+    width:100%;
+    border:2px #fcfcfc solid;
+    padding:25px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+article.illustrations > div{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+article.illustrations .barre{
+    position:relative;
+    margin-top:10px;
+    border:1px #fcfcfc solid;
+    width:100%;
+    height:20px;
+    background: red;
+}
+
+article.illustrations .barre .vie{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background:rgb(1, 203, 1);
+    border-right:1px #fcfcfc solid;
+}
+
+article.illustrations .barre.barreEnergie{
+    background:#161616;
+}
+
+article.illustrations .barre.barreEnergie .energie{
+    height:100%;
+    width:0%;
+    background:cyan;
+}
+
+article.illustrations > div img{
+    height:250px;
+    border:2px solid #fcfcfc;
+}
+
+
+article#zoneDeTexte{
+    width:100%;
+    border:2px solid rgb(127, 255, 118);
+    padding:20px;
+    box-sizing: border-box;
+    color:rgb(127, 255, 118);
+    min-height:175px;
+    font-size:1.75em;
+    margin-bottom:20px;
+    font-family: "VT323", monospace;
+    background-color:#161616;
+}
+
+article.zoneDesBoutons{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+article.zoneDesBoutons button{
+    border:2px solid white;
+    background-color:transparent;
+    padding:16px 24px;
+    cursor:pointer;
+    box-sizing: border-box;
+    outline:none;
+    text-transform: uppercase;
+    color:white;
+    font-size:2.25em;
+    font-family: "Micro 5", sans-serif;
+}
+
+article.zoneDesBoutons button i{
+    margin-right:16px;
+    font-size:0.75em;
+}
+
+button#btnAttaque:hover{
+    color:#161616;
+    border-color:yellow;
+    background-color: yellow;
+}
+button#btnEnergie:hover{
+    color:#161616;
+    border-color:cyan;
+    background-color: cyan;
+}
+button#btnSpecial{
+    color:grey;
+    background-color: #161616;
+    border-color:grey;
+    cursor: arrow;
+    pointer-events: none;
+}
+
+button#btnSpecial.active{
+    color:#fcfcfc;
+    background-color: #161616;
+    border-color:#fcfcfc;
+    cursor: pointer;
+    pointer-events:auto;
+}
+
+button#btnSpecial.active:hover{
+    color:#161616;
+    border-color:orange;
+    background-color: orange;
+}
+
+
+
+button#btnInfos{
+    padding:16px;
+}
+button#btnInfos:hover{
+    color:#161616;
+    border-color:rgb(127, 255, 118);
+    background-color: rgb(127, 255, 118);
+}
+button#btnInfos i{
+    margin:0;
+    padding: 0 6px;
+}

@@ -1,0 +1,110 @@
+body{
+    background:#f6f6f6;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align:center;
+    text-transform: uppercase;
+}
+
+form{
+    max-width: 600px;
+    padding:30px;
+    box-sizing: border-box;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    margin:30px auto 50px auto;
+}
+
+form input[type="text"]{
+    padding:10px;
+    width:calc(80% - 30px);
+}
+
+form input[type="submit"]{
+    padding:10px;
+    width:20%;
+}
+
+main {
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+section{
+    border:3px solid black;
+    width:calc(100% / 3 - 10px);
+    border-radius:10px;
+    padding:0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+section > div{
+    margin:0;
+    padding:0 10px 10px 10px;
+}
+
+section > p {
+    text-transform:uppercase;
+    background:black;
+    padding:20px 0;
+    box-sizing: border-box;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    margin:0;
+    font-size:1.5em;
+}
+
+section.afaire{
+    border-color:firebrick;
+}
+section.afaire > p{
+    background:firebrick;
+}
+
+section.encours{
+    border-color:goldenrod;
+}
+section.encours > p{
+    background:goldenrod;
+}
+
+section.termine{
+    border-color:darkgreen;
+}
+section.termine > p{
+    background:darkgreen;
+}
+
+.tache{
+    background:rgb(226, 226, 226);
+    margin-top:10px;
+    padding:5px;
+    box-sizing: border-box;
+    border:solid 1px black;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.tache p{
+    margin:0;
+    width:70%;
+}
+
+.tache div{
+    width:30%;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:space-between;
+    align-items:stretch;
+}
+
+.tache div select{
+    margin-bottom:5px;
+}

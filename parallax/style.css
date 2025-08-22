@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.parallax{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.parallax img#montagne{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.parallax img#arbres{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:50%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.parallax #titre{
+    position: relative;
+    z-index: 1;
+}
+
+.parallax #titre h1, #decoration{
+    color: white;
+    font-family: sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#decoration {
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.25);
+    -webkit-text-stroke: 3px rgba(255,255,255, 0.3);
+    font-weight: bold;
+}
+.explications{
+    padding:20vh 0;
+    box-sizing: border-box;
+    position:relative;
+    overflow:hidden;
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    flex-direction:column;
+}
+
+.explications::before{
+    content:'';
+    width:100%;
+    height:20vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(to bottom, #000, rgba(0,0,0,0))
+}
+
+.explications img{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.explications::after{
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#0a2a43;
+    mix-blend-mode: color;
+}
+
+.explications p{
+    padding:0 20%;
+    font-family: sans-serif;
+    font-size:1.75em;
+    color:white;
+    font-weight:bold;
+    text-shadow: 1px 1px 5px #262626;
+}

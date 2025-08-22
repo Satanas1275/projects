@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgb(20, 17, 37);
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: chocolate;
+	text-align: center;
+	margin: 5% 0 50px 0;
+}
+
+section {
+	width: 850px;
+	height: auto;
+	background: rgb(202, 201, 216);
+	padding: 40px 50px;
+	box-sizing: border-box;
+	margin: 0 auto 50px auto;
+}
+
+form {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+input {
+	width: 75%;
+	height: auto;
+	background: white;
+	border: solid 2px #fff;
+	border-radius: 7px;
+	padding: 15px 0 15px 20px;
+	box-sizing: border-box;
+}
+
+p.error {
+	position: absolute;
+	bottom: -22px;
+	left: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+button {
+	width: auto;
+	height: auto;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: royalblue;
+	border: none;
+	margin: 0 20px;
+}
+
+button.reset {
+	margin: 0;
+	background: coral;
+}
+
+.reponse {
+	width: 850px;
+	height: auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	margin: 0 auto 20px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 16px;
+}
+
+.plus {
+	background: rgb(250, 176, 91);
+}
+.moins {
+	background: rgb(253, 120, 120);
+}
+.gagne {
+	background: rgb(96, 189, 88);
+}

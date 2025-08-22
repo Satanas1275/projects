@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To do list</h1>
+
+    <form id="formulaire">
+        <input type="text" name="tache" placeholder="Ajouter une nouvelle tache">
+        <input type="submit" value="Ajouter">
+    </form>
+
+    <main>
+        <section class="afaire">
+            <p>À faire</p>
+            <div id="zoneAFaire"></div>
+        </section>
+
+        <section class="encours">
+            <p>En cours</p>
+            <div id="zoneEnCours"></div>
+        </section>
+
+        <section class="termine">
+            <p>Terminé</p>
+            <div id="zoneTermine"></div>
+        </section>
+    </main>
+
+    <div class="tache" id="template" style="display: none;">
+        <p class="intitule">Ceci est un truc à faire</p>
+        <div>
+            <select class="statut">
+                <option value="afaire">À faire</option>
+                <option value="encours">En cours</option>
+                <option value="termine">Terminé</option>
+            </select>
+            <button class="btnSupprimer">Supprimer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
