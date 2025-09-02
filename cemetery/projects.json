@@ -19,7 +19,7 @@
     "name": "TO-DO-LIST",
     "version": "v1",
     "type": "web",
-    "link": "todo-list/",
+    "link": "TO-DO-LIST/",
     "description": "A simple to-do list with Local Storage saving system.",
     "image": "no"
   },
