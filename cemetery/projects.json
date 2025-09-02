@@ -1,9 +1,10 @@
 [
   {
-    "name": "name",
-    "type": "site",
-    "link": "link",
-    "description": "Description",
-    "image": "picture"
+    "name": "Ametyste",
+    "version": "beta-v1",
+    "type": "web",
+    "link": "Ametyste-v1-beta/",
+    "description": "The first version of the website for the Ametyst Minecraft server.",
+    "image": "no"
   }
 ]
