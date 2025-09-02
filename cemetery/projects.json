@@ -1,1 +1,9 @@
-
+[
+  {
+    "name": "name",
+    "type": "site",
+    "link": "link",
+    "description": "Description",
+    "image": "picture"
+  }
+]
