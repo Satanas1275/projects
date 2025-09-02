@@ -99,7 +99,7 @@
     "name": "PasNetflix",
     "version": "v1",
     "type": "web",
-    "link": "pasnetflix-v1/",
+    "link": "PasNetflix-v1/",
     "description": "A self-hosted website to watch your own videos. Drop your files in a folder and play them from the browser.",
     "image": "no"
   }
