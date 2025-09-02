@@ -19,7 +19,7 @@
     "name": "TO-DO-LIST",
     "version": "v1",
     "type": "web",
-    "link": "TO-DO-LIST/",
+    "link": "todo-list/",
     "description": "A simple to-do list with Local Storage saving system.",
     "image": "no"
   },
@@ -27,7 +27,7 @@
     "name": "RPG Beta",
     "version": "beta",
     "type": "web",
-    "link": "RPG-beta/",
+    "link": "rpg-beta/",
     "description": "An unfinished RPG prototype. Very few features, but it actually runs.",
     "image": "no"
   },
@@ -35,7 +35,7 @@
     "name": "ROCKNITE STUDIO v1 Beta",
     "version": "beta-v1",
     "type": "web",
-    "link": "ROCKNITE-STUDIO-v1-beta/",
+    "link": "rocknite-studio-v1-beta/",
     "description": "The beta version of my film/game studio website. It stayed online for around a month.",
     "image": "no"
   },
@@ -53,6 +53,54 @@
     "type": "web",
     "link": "Ametyste-v2-beta/",
     "description": "The second beta of the website for the Ametyst Minecraft server. It never got released, but the project might come back stronger soon.",
+    "image": "no"
+  },
+  {
+    "name": "Virus",
+    "version": "beta-v1",
+    "type": "script",
+    "link": "virus-v1-beta/",
+    "description": "A remote access virus coded in middle school to control school PCs, launch programs, disable projector freezes, and more. Fully functional but never actually used.",
+    "image": "no"
+  },
+  {
+    "name": "Discord Token Grabber",
+    "version": "v1",
+    "type": "script",
+    "link": "tokengrab-discord-v1/",
+    "description": "A Python script that grabs Discord tokens (browser & app) on Windows and sends them via webhook. 100% functional but never used.",
+    "image": "no"
+  },
+  {
+    "name": "Textboard Bot",
+    "version": "v1",
+    "type": "program",
+    "link": "textboard-bot-v1/",
+    "description": "A bot made for an AYWEN event called Textboard, generating ASCII art drawings automatically.",
+    "image": "no"
+  },
+  {
+    "name": "Py-Cours",
+    "version": "v1",
+    "type": "tool/program/script",
+    "link": "py-cours/",
+    "description": "A collection of all my Python courses and exercises.",
+    "image": "no"
+  },
+  {
+    "name": "Random Game",
+    "version": "beta-v1",
+    "type": "program",
+    "link": "game-v1-beta/",
+    "description": "A random game prototype. Most likely non-functional since I never even tested it before adding it to the graveyard.",
+    "image": "no"
+  },
+  {
+    "name": "PasNetflix",
+    "version": "v1",
+    "type": "web",
+    "link": "pasnetflix-v1/",
+    "description": "A self-hosted website to watch your own videos. Drop your files in a folder and play them from the browser.",
     "image": "no"
   }
 ]
