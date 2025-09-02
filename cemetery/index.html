@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Satanas1275's Project Graveyard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide-icons"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white">
+  <header class="p-8 text-center">
+    <h1 class="text-5xl font-extrabold text-red-500 drop-shadow-lg">
+      ⚰️ Satanas1275's Project Graveyard ⚰️
+    </h1>
+    <p class="text-gray-400 mt-2">Where forgotten dreams rest in digital peace...</p>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="flex justify-center mb-6">
+    <input 
+      id="searchInput" 
+      type="text" 
+      placeholder="Search for a lost soul..." 
+      class="w-1/2 px-4 py-2 rounded-2xl bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:ring-2 focus:ring-red-500 outline-none"
+    />
+  </div>
+
+  <!-- Grid Container -->
+  <div id="projectsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 pb-12"></div>
+
+  <script>
+    fetch("projects.json")
+
+    const container = document.getElementById("projectsContainer");
+    const searchInput = document.getElementById("searchInput");
+
+    function renderProjects(list) {
+      container.innerHTML = "";
+      if (list.length === 0) {
+        container.innerHTML = `<p class="col-span-full text-center text-gray-500">No projects found...</p>`;
+        return;
+      }
+
+      list.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300";
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.name}" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h2 class="text-2xl font-bold text-red-400">${p.name}</h2>
+            <span class="inline-block bg-gray-700 text-xs px-2 py-1 rounded-full mt-1">${p.type}</span>
+            <p class="mt-3 text-gray-300">${p.description}</p>
+            <a href="${p.link}" target="_blank" class="mt-4 inline-block bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-semibold transition">
+              Visit
+            </a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Initial render
+    renderProjects(projects);
+
+    // Search filter
+    searchInput.addEventListener("input", e => {
+      const query = e.target.value.toLowerCase();
+      const filtered = projects.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        p.type.toLowerCase().includes(query) ||
+        p.description.toLowerCase().includes(query)
+      );
+      renderProjects(filtered);
+    });
+  </script>
+</body>
+</html>
