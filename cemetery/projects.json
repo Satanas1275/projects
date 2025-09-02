@@ -6,5 +6,13 @@
     "link": "Ametyste-v1-beta/",
     "description": "The first version of the website for the Ametyst Minecraft server.",
     "image": "no"
+  },
+  {
+    "name": "Ametyste",
+    "version": "beta-v2",
+    "type": "web",
+    "link": "Ametyste-v2-beta/",
+    "description": "The second beta of the website for the Ametyst Minecraft server. It never got released, but the project might come back stronger soon.",
+    "image": "no"
   }
 ]
