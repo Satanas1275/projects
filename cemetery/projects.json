@@ -27,7 +27,7 @@
     "name": "RPG Beta",
     "version": "beta",
     "type": "web",
-    "link": "rpg-beta/",
+    "link": "RPG-beta/",
     "description": "An unfinished RPG prototype. Very few features, but it actually runs.",
     "image": "no"
   },
