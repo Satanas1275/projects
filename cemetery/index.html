@@ -41,10 +41,24 @@
       list.forEach(p => {
         const card = document.createElement("div");
         card.className = "bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300";
+
+        // Gestion image ou fallback texte
+        let imageHTML = "";
+        if (p.image && p.image !== "no") {
+          imageHTML = `<img src="${p.image}" alt="${p.name}" class="w-full h-40 object-cover">`;
+        } else {
+          imageHTML = `
+            <div class="w-full h-40 flex items-center justify-center bg-gray-700 text-gray-400 italic">
+              No image available
+            </div>
+          `;
+        }
+
         card.innerHTML = `
-          <img src="${p.image}" alt="${p.name}" class="w-full h-40 object-cover">
+          ${imageHTML}
           <div class="p-4">
             <h2 class="text-2xl font-bold text-red-400">${p.name}</h2>
+            ${p.version ? `<p class="text-sm text-gray-500">Version: ${p.version}</p>` : ""}
             <span class="inline-block bg-gray-700 text-xs px-2 py-1 rounded-full mt-1">${p.type}</span>
             <p class="mt-3 text-gray-300">${p.description}</p>
             <a href="${p.link}" target="_blank" class="mt-4 inline-block bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-semibold transition">
@@ -73,6 +87,7 @@
       const query = e.target.value.toLowerCase();
       const filtered = projects.filter(p =>
         p.name.toLowerCase().includes(query) ||
+        (p.version && p.version.toLowerCase().includes(query)) ||
         p.type.toLowerCase().includes(query) ||
         p.description.toLowerCase().includes(query)
       );
