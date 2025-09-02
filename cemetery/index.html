@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Satanas1275's Project Graveyard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide-icons"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white">
   <header class="p-8 text-center">
@@ -28,10 +27,9 @@
   <div id="projectsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 pb-12"></div>
 
   <script>
-    fetch("projects.json")
-
     const container = document.getElementById("projectsContainer");
     const searchInput = document.getElementById("searchInput");
+    let projects = [];
 
     function renderProjects(list) {
       container.innerHTML = "";
@@ -58,8 +56,17 @@
       });
     }
 
-    // Initial render
-    renderProjects(projects);
+    // Load JSON
+    fetch("projects.json")
+      .then(res => res.json())
+      .then(data => {
+        projects = data;
+        renderProjects(projects);
+      })
+      .catch(err => {
+        container.innerHTML = `<p class="text-center text-red-500">Error loading projects.json</p>`;
+        console.error(err);
+      });
 
     // Search filter
     searchInput.addEventListener("input", e => {
