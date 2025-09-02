@@ -1,5 +1,45 @@
 [
   {
+    "name": "Parallax",
+    "version": "v1",
+    "type": "web",
+    "link": "parallax/",
+    "description": "A dynamic experimental webpage, pretty useless but fun to make.",
+    "image": "no"
+  },
+  {
+    "name": "Balkanarchy 404",
+    "version": "v1",
+    "type": "web",
+    "link": "balkanarchy-404/",
+    "description": "A custom 404 error page for Balkanarchy.",
+    "image": "no"
+  },
+  {
+    "name": "TO-DO-LIST",
+    "version": "v1",
+    "type": "web",
+    "link": "todo-list/",
+    "description": "A simple to-do list with Local Storage saving system.",
+    "image": "no"
+  },
+  {
+    "name": "RPG Beta",
+    "version": "beta",
+    "type": "web",
+    "link": "rpg-beta/",
+    "description": "An unfinished RPG prototype. Very few features, but it actually runs.",
+    "image": "no"
+  },
+  {
+    "name": "ROCKNITE STUDIO v1 Beta",
+    "version": "beta-v1",
+    "type": "web",
+    "link": "rocknite-studio-v1-beta/",
+    "description": "The beta version of my film/game studio website. It stayed online for around a month.",
+    "image": "no"
+  },
+  {
     "name": "Ametyste",
     "version": "beta-v1",
     "type": "web",
